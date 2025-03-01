@@ -356,13 +356,13 @@
         async function buscarNOME() {
             //var nome = document.getElementById("nomeInput").value.replace(/[^\d]/g, ''); // Remove caracteres não numéricos
             var nome = document.getElementById("nomeInput").value
-            var url = "certificados/" + nome + ".pdf";
-            var resultadoDiv = document.getElementById("resultado");
-            resultadoDiv.innerHTML = "<a href='" + url + "' download>" + nome + ".pdf</a>";
-            resultadoDiv.style.display = 'block';
+            var url = "certificados_equipe_v1/" + nome + ".pdf";
+            //var resultadoDiv = document.getElementById("resultado");
+            //resultadoDiv.innerHTML = "<a href='" + url + "' download>" + nome + ".pdf</a>";
+            //resultadoDiv.style.display = 'block';
 
             
-            /*try {
+            try {
                 const response = await fetch(url);
                 const fileName = "foi";
 
@@ -378,7 +378,7 @@
             } catch (error) {
                 console.error(`Erro ao verificar o arquivo :`, error);
 
-            }*/
+            }
 
         }
 
@@ -387,7 +387,17 @@
 
         input.addEventListener('input', function () {
             const inputValue = this.value.toLowerCase();
-            const suggestions = ['Thaís Celi Melo', "Thaís"]; // Aqui você pode substituir com suas próprias sugestões
+            //const suggestions = ['Thaís Celi Melo', "Thaís"]; // Aqui você pode substituir com suas próprias sugestões
+          const suggestions = [
+    'teste teste',
+    'Arthur Vaneski Dircksen',
+    'Thaís Celi Melo'
+];
+
+// Você pode adicionar mais sugestões conforme necessário
+
+
+
 
             const filteredSuggestions = suggestions.filter(suggestion =>
                 suggestion.toLowerCase().startsWith(inputValue)
