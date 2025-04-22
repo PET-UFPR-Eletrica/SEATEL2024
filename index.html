@@ -380,7 +380,30 @@
 
         input.addEventListener('input', function () {
             const inputValue = this.value.toLowerCase();
-            const suggestions = ['Thaís Celi Melo', "Thaís", "Felipe de Oliveira do Carmo"]; // Aqui você pode substituir com suas próprias sugestões
+            const suggestions = ['Thaís Celi Melo', "Thaís", "Felipe de Oliveira do Carmo", 'Maria Eduarda Negrelli de Araujo',
+'Paulo Bernardo Warken Junior',
+'Vitor Gabriel Fonseca Pereira',
+'Matheus Mion Chollet',
+'Enzo Graciano de Figueiredo ',
+'Enzo Grasciano de Figueiredo ',
+'Bruno Lima da Silva ',
+'Ricardo Barrim Chandoha ',
+'Gabriel Bronislavski',
+'David Gentarou Toyamakageshima ',
+'Breno Garcia Rossi',
+'Vinícius Braun Taraszczuk',
+'Pedro Arthur Moro Rios ',
+'Leonardo Kulaitis Penteado Sypniewski',
+'Nicolas Bettega Ribeiro',
+'CLEITON DA SILVA PONTES',
+'Roberto Carlos Vieira ',
+'Cassiano José Fóes',
+'Leonardo Pelanda Jarek',
+'Otávio Augusto Rodrigues de Campos',
+'Nathan Taiki Costa Tominaga ',
+'Pedro Henrique Sartorello',
+'Juliano Souza de Barros ',
+'Maria Eduarda Rizo']; // Aqui você pode substituir com suas próprias sugestões
 
             const filteredSuggestions = suggestions.filter(suggestion =>
                 suggestion.toLowerCase().startsWith(inputValue)
